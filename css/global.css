@@ -30,6 +30,10 @@ body {
     font-family: var(--font-base);
     background-color: var(--clr-accent-light-1);
     color: var(--clr-primary-dark);
+
+    main {
+        width: 70vw;
+    }
 }
 
 
