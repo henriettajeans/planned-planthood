@@ -1,0 +1,47 @@
+.category {
+    border: 0.5px solid black;
+    border-radius: 3vw;
+    padding: 0 0.2rem;
+
+
+}
+
+.flower {
+    background-color: lightsteelblue;
+}
+
+.eatable {
+    background-color: lightpink;
+}
+
+.greenery {
+    background-color: lightgreen;
+}
+
+.sun {
+    background-color: lightgoldenrodyellow;
+}
+
+.easy {
+    background-color: lightsalmon;
+}
+
+.decorative {
+    background-color: lightcyan;
+}
+
+.colorful {
+    background-color: lightcoral;
+}
+
+.enduring {
+    background-color: lightskyblue;
+}
+
+.fast {
+    background-color: lightgrey;
+}
+
+.humid {
+    background-color: lightslategray;
+}
