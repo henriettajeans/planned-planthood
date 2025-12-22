@@ -6,14 +6,12 @@
 
         .content-section__grid__card {
             header {
-                border: 1px solid orange;
                 display: grid;
                 grid-template-areas: "image" "head";
 
                 /* grid-row: head; */
 
                 figure {
-                    border: 1px solid red;
                     grid-row: image;
                 }
             }

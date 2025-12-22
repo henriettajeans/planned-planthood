@@ -1,0 +1,15 @@
+.hero-section {
+    border: 2px solid pink;
+    text-align: center;
+
+    div {
+
+        .hero-section__title {
+
+            .hero-section__title__p {
+                font-size: min(1rem, 5vw);
+                font-weight: 200;
+            }
+        }
+    }
+}
