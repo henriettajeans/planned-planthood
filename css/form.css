@@ -1,0 +1,33 @@
+.form-section__bg {
+    background-color: white;
+}
+
+.form-section {
+    padding: 2rem;
+
+    .form-section__input-style {
+        border: 1px solid green;
+        border-radius: 2vw;
+        width: 50%;
+        padding: 0.2em;
+
+        input {
+            border: none;
+        }
+
+        button {
+            border-radius: 2vw;
+            padding: 0.4em;
+            border: none;
+            background-color: green;
+            color: white;
+
+            &:hover {
+                background-color: white;
+                color: green;
+                border: 1px solid green;
+                padding: calc(0.4em - 1px)
+            }
+        }
+    }
+}

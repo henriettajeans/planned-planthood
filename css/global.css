@@ -31,9 +31,9 @@ body {
     background-color: var(--clr-accent-light-1);
     color: var(--clr-primary-dark);
 
-    main {
+    /* main {
         width: 70vw;
-    }
+    } */
 }
 
 
@@ -77,6 +77,15 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 /* if we have a fullwidth inside of a content-grid put this in the fullwidth container */
 .content-grid>.fullwidth {
     grid-column: fullwidth;
+}
+
+body>nav>div,
+body>header>div,
+body>main>div>section,
+body>footer>div {
+    border: 1 pix solid green;
+    width: 60vw;
+    margin: 0 20vw;
 }
 
 
