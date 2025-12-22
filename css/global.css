@@ -1,0 +1,89 @@
+/*** Global/base ***/
+h1,
+h2,
+h3 {
+    font-weight: var(--fw-bold);
+    line-height: 1;
+}
+
+h1,
+h2 {
+    font-size: var(--fs-700);
+}
+
+h3 {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-semi-bold);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-accent);
+
+    &:hover,
+    &:focus-visible {
+        text-decoration: underline;
+    }
+}
+
+body {
+    font-family: var(--font-base);
+    background-color: var(--clr-accent-light-1);
+    color: var(--clr-primary-dark);
+}
+
+
+/*** Composition ***/
+.flow>*+* {
+    margin-block-start: var(--flow-space);
+}
+
+.flow-lg>*+* {
+    margin-block-start: var(--flow-space-lg);
+}
+
+/*
+See these for more info:
+https://www.youtube.com/watch?v=c13gpBrnGEw
+https://www.youtube.com/watch?v=cf-J4ffMBfo
+*/
+.content-grid,
+.fullwidth {
+    --_content-width: 70rem;
+    --_min-margin-width: 1rem;
+
+    display: grid;
+    grid-template-columns: [fullwidth-start] minmax(var(--_min-margin-width), 1fr) [content-start] min(100% - var(--_min-margin-width) * 2,
+            var(--_content-width)) [content-end] minmax(var(--_min-margin-width), 1fr) [fullwidth-end];
+    /*  grid-template-rows: [fullwidth-start] auto [fullwidth-end];*/
+}
+
+/* keep the content of the content-grid and fullwidth inside the content container */
+.content-grid>*,
+.fullwidth>* {
+    grid-column: content;
+}
+
+/* a bit more complex but more fancy/explicit version of above */
+/*.content-grid > :not(.fullwidth),
+.fullwidth > :not(.fullwidth) {
+  grid-column: content;
+}*/
+
+/* if we have a fullwidth inside of a content-grid put this in the fullwidth container */
+.content-grid>.fullwidth {
+    grid-column: fullwidth;
+}
+
+
+/*** Utilities ***/
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
