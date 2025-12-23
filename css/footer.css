@@ -1,0 +1,36 @@
+body>footer {
+    background-color: var(--clr-green-400);
+    color: white;
+
+    .footer-wrapper {
+
+        display: grid;
+        grid-template-columns: 80% 1fr;
+        grid-template-rows: auto;
+
+        div {
+            grid-column: 1/2;
+            grid-row: span 2;
+
+            article>div>p {
+                display: inline-block;
+            }
+        }
+
+
+        a {
+            color: white;
+        }
+
+        ul {
+            grid-column: 2;
+            grid-row: span 2;
+
+            a {
+                li {
+                    padding: 0.6rem;
+                }
+            }
+        }
+    }
+}
