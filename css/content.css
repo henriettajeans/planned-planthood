@@ -4,16 +4,24 @@
         grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
 
 
+
         .content-section__grid__card {
+            display: grid;
+            grid-template-areas: "image" "head";
+
             header {
                 display: grid;
-                grid-template-areas: "image" "head";
+                grid-row: head;
 
                 /* grid-row: head; */
 
-                figure {
-                    grid-row: image;
-                }
+                /* figure {
+                    
+                } */
+            }
+
+            .content-section__grid__card__img {
+                grid-row: image;
             }
 
         }
