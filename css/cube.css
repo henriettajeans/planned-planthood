@@ -4,6 +4,9 @@
     max-width: fit-content;
     text-transform: uppercase;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.6rem;
 
 }
 
@@ -49,4 +52,5 @@
 
 .avatar {
     border-radius: 100%;
+    width: min(5rem, 6rem);
 }
