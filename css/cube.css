@@ -46,3 +46,7 @@
 .humid {
     background-color: lightslategray;
 }
+
+.avatar {
+    border-radius: 100%;
+}
