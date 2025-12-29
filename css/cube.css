@@ -1,8 +1,9 @@
 .category {
-    border: 0.5px solid black;
     border-radius: 3vw;
-    padding: 0 0.2rem;
-
+    padding: 0.2rem 0.4rem;
+    max-width: fit-content;
+    text-transform: uppercase;
+    color: white;
 
 }
 
@@ -45,4 +46,3 @@
 .humid {
     background-color: lightslategray;
 }
-

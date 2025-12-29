@@ -8,6 +8,7 @@
         .content-section__grid__card {
             display: grid;
             grid-template-areas: "image" "head";
+            align-items: flex-start;
 
             header {
                 display: grid;
@@ -15,14 +16,22 @@
 
                 /* grid-row: head; */
 
-                /* figure {
-                    
-                } */
+
             }
 
+            /* figure {
+                    
+                } */
             .content-section__grid__card__img {
                 grid-row: image;
                 position: relative;
+                width: 100%;
+
+                img {
+                    aspect-ratio: 1;
+                    width: max(70vh, 10rem);
+                }
+
 
                 /* Displays the watermark on top of the card images. Top, left and translate is to position the svg to the center of the image. */
                 .watermark {
