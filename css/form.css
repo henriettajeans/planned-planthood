@@ -45,17 +45,22 @@
 
     .form-section__input-style {
         border: 1px solid green;
+        border-style: inset;
         border-radius: 2vw;
-        width: 50%;
+        width: fit-content;
         padding: 0.2em;
+        display: flex;
 
         input {
             border: none;
+            margin-left: 0.5vw;
+
         }
 
         button {
-            border-radius: 2vw;
-            padding: 0.4em;
+            border-radius: 2rem;
+            padding: 0.4em 0.8em;
+            width: fit-content;
             border: none;
             background-color: green;
             color: white;
@@ -64,7 +69,12 @@
                 background-color: white;
                 color: green;
                 border: 1px solid green;
-                padding: calc(0.4em - 1px);
+
+
+                padding-top: calc(0.4em - 1px);
+                padding-bottom: calc(0.4em - 1px);
+                padding-right: calc(0.8em - 1px);
+                padding-left: calc(0.8em - 1px);
             }
         }
     }
@@ -91,6 +101,35 @@
     .static-section__content {
         grid-column: 2;
         grid-row: 1;
+
+
+        .static-section__content__link {
+            justify-self: end;
+            display: block;
+
+            p {
+                background: green;
+                color: white;
+                padding: 0.4em 0.8em;
+                border-radius: 2rem;
+                margin-top: 1rem;
+                width: fit-content;
+
+
+                &:hover {
+                    background-color: white;
+                    color: green;
+                    border: 1px solid green;
+
+
+                    padding-top: calc(0.4em - 1px);
+                    padding-bottom: calc(0.4em - 1px);
+                    padding-right: calc(0.8em - 1px);
+                    padding-left: calc(0.8em - 1px);
+                }
+            }
+
+        }
     }
 
     .static-section__icon__bg {
