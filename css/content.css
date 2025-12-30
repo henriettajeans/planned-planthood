@@ -1,9 +1,22 @@
 .content-section {
     .content-section__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(22ch, 1fr));
         gap: 1vw;
         /* align-items: start; */
+
+        @media (min-width:1300px) {
+            grid-template-columns: repeat(auto-fit, minmax(22ch, 1fr));
+        }
+
+        @media (max-width:1050px) {
+            grid-template-columns: repeat(auto-fit, minmax(28ch, 1fr));
+        }
+
+
+        @media (max-width:500px) {
+            grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+        }
 
 
 
@@ -50,6 +63,9 @@
 
             footer {
                 display: flex;
+                gap: 0.4em;
+                padding: 0.4em;
+                align-items: center;
             }
 
         }

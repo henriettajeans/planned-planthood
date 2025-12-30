@@ -27,7 +27,10 @@ a {
         text-decoration: underline;
     }
 }
-ul, ol, li{
+
+ul,
+ol,
+li {
     list-style: none;
 }
 
@@ -88,9 +91,14 @@ body>nav>div,
 body>header>div,
 body>main>div>section,
 body>footer>div {
-    border: 1 pix solid green;
+    /* border: 1 pix solid green; */
     width: 60vw;
     margin: 0 20vw;
+
+    @media (max-width:1050px) {
+        width: 90vw;
+        margin: 0 5vw;
+    }
 }
 
 

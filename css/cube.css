@@ -54,3 +54,8 @@
     border-radius: 100%;
     width: min(5rem, 6rem);
 }
+
+.author {
+    color: green;
+    font-weight: 650;
+}
