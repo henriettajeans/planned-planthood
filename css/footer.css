@@ -1,6 +1,6 @@
 body>footer {
     background-color: var(--clr-green-400);
-    color: white;
+    color: var(--clr-primary-light-1);
     padding: var(--flow-space-lg) 0;
 
     .footer-wrapper {
@@ -21,7 +21,7 @@ body>footer {
 
 
         a {
-            color: white;
+            color: var(--clr-primary-light-1);
 
         }
 

@@ -3,7 +3,7 @@
     padding: 0.2rem 0.4rem;
     max-width: fit-content;
     text-transform: uppercase;
-    color: white;
+    color: var(--clr-primary-light-1);
     display: flex;
     flex-wrap: wrap;
     font-size: var(--fs-200);
@@ -11,43 +11,43 @@
 }
 
 .flower {
-    background-color: lightsteelblue;
+    background-color: var(--clr-flower);
 }
 
 .eatable {
-    background-color: lightpink;
+    background-color: var(--clr-edible);
 }
 
 .greenery {
-    background-color: lightgreen;
+    background-color: var(--clr-green);
 }
 
 .sun {
-    background-color: lightgoldenrodyellow;
+    background-color: var(--clr-sunloving);
 }
 
 .easy {
-    background-color: lightsalmon;
+    background-color: var(--clr-easy);
 }
 
 .decorative {
-    background-color: lightcyan;
+    background-color: var(--clr-decorative);
 }
 
 .colorful {
-    background-color: lightcoral;
+    background-color: var(--clr-colorful);
 }
 
 .enduring {
-    background-color: lightskyblue;
+    background-color: var(--clr-robust);
 }
 
 .fast {
-    background-color: lightgrey;
+    background-color: var(--clr-fast);
 }
 
 .humid {
-    background-color: lightslategray;
+    background-color: var(--clr-air);
 }
 
 .avatar {

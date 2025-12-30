@@ -22,7 +22,7 @@
         grid-template-columns: 2fr 1fr 1fr 2fr;
         grid-template-rows: 12rem 12rem;
         width: 100%;
-        border: var(--fs-200) solid white;
+        border: var(--fs-200) solid var(--clr-primary-light-1);
         box-shadow: var(--border-shadow);
 
         img {

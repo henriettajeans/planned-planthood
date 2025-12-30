@@ -1,5 +1,5 @@
 nav {
-    background-color: white;
+    background-color: var(--clr-primary-light-1);
 
     div {
         display: flex;
@@ -22,7 +22,6 @@ nav {
 
                 .logo {
                     width: 20%;
-                    /* color: var(--clr-green-400); */
                 }
 
                 p {
@@ -51,7 +50,7 @@ nav {
 .skiplink {
     display: inline-block;
     color: var(--black);
-    background: var(--white);
+    background: var(--clr-primary-light-1);
     padding: .5em;
     position: absolute;
     left: -99999rem;

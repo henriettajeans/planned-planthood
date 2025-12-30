@@ -33,7 +33,7 @@ main>div:nth-child(2) {
             grid-template-areas: "image" "head";
             grid-template-rows: auto auto 1fr auto;
             align-items: start;
-            background-color: white;
+            background-color: var(--clr-primary-light-1);
             box-shadow: var(--border-shadow);
 
 
@@ -53,6 +53,7 @@ main>div:nth-child(2) {
                 grid-row: image;
                 position: relative;
                 width: 100%;
+                margin-bottom: 1rem;
 
                 img {
                     aspect-ratio: 1;
@@ -81,4 +82,9 @@ main>div:nth-child(2) {
             }
         }
     }
+}
+
+.content-section__grid__card>*:not(.content-section__grid__card__img) {
+    padding-inline: var(--spacing-base);
+
 }
