@@ -1,6 +1,7 @@
 body>footer {
     background-color: var(--clr-green-400);
     color: white;
+    padding: var(--flow-space-lg) 0;
 
     .footer-wrapper {
 

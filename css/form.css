@@ -1,15 +1,21 @@
 .form-section__bg {
     background-color: white;
+    padding: var(--flow-space-lg) 0;
+
+    @media (max-width: 1050px) {
+        padding: var(--flow-space) 0;
+    }
 }
 
 .form-section {
-    padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-items: center;
 
     form {
         grid-column: 1;
+        justify-self: center;
     }
 
     .form-section__icon__bg {
@@ -19,27 +25,21 @@
     @media (max-width: 700px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        justify-content: center;
+        justify-items: center;
+        align-items: center;
         text-align: center;
 
 
         form {
             grid-column: 1;
             grid-row: 2;
-            /* position: relative;
-
-            div {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            } */
+            justify-self: center;
         }
 
         .form-section__icon__bg {
             grid-column: 1;
             grid-row: 1;
-            justify-self: center;
+            /* justify-self: center; */
         }
     }
 
@@ -70,13 +70,23 @@
     }
 }
 
-.static-section {
+.static-section__bg {
+    background-color: white;
+    padding: var(--flow-space-lg) 0;
 
-    padding: 2rem;
+    @media (max-width: 1050px) {
+        padding: var(--flow-space) 0;
+    }
+}
+
+.static-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
+    justify-items: center;
+
+
 
     .static-section__content {
         grid-column: 2;
@@ -92,21 +102,14 @@
     @media (max-width: 700px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        justify-content: center;
+        justify-items: center;
         text-align: center;
 
 
         .static-section__content {
             grid-column: 1;
             grid-row: 2;
-            /* position: relative;
 
-            div {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            } */
         }
 
         .static-section__icon__bg {
