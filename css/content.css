@@ -48,7 +48,10 @@
 
                 img {
                     aspect-ratio: 1;
-                    width: max(70vh, 10rem);
+                    width: max(90vw, 10rem);
+                    height: auto;
+
+
                 }
 
 
