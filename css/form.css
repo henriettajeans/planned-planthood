@@ -4,6 +4,17 @@
 
 .form-section {
     padding: 2rem;
+    display: grid;
+    grid-template-columns: 2;
+    align-items: center;
+
+    form {
+        grid-column: 1;
+    }
+
+    .form-section__icon__bg {
+        grid-column: 2;
+    }
 
     .form-section__input-style {
         border: 1px solid green;
@@ -29,5 +40,25 @@
                 padding: calc(0.4em - 1px);
             }
         }
+    }
+}
+
+.static-section {
+    
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+
+    .static-section__content {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .static-section__icon__bg {
+        grid-column: 1;
+        grid-row: 1;
+
     }
 }
