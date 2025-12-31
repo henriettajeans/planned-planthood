@@ -61,7 +61,10 @@ main>div:nth-child(2) {
                     height: auto;
                 }
 
-                /* Displays the watermark on top of the card images. Top, left and translate is to position the svg to the center of the image. */
+                /* Displays the watermark on top of the card images.
+                Top, left and translate is to position the svg to the center of the image (parent),
+                which has position:relative. */
+                
                 .watermark {
                     position: absolute;
                     top: 50%;
@@ -84,6 +87,9 @@ main>div:nth-child(2) {
     }
 }
 
+/* When I came to this resultion, I found no other way to solve it but using :not.
+It might not be the best way if HTML is changed, but I want to use it in this static page
+to show that I know how to. */
 .content-section__grid__card>*:not(.content-section__grid__card__img) {
     padding-inline: var(--spacing-base);
 

@@ -1,13 +1,49 @@
 nav {
     background-color: var(--clr-primary-light-1);
 
+    /* TODO: add a hamburger menu with javaScript (easy level) */
+
     div {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 1rem;
-
+        position: relative;
         height: 3rem;
+
+
+
+        ul {
+            @media (max-width:600px) {
+                overflow: hidden;
+                background-color: blue;
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                a {
+                    color: white;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                    display: block;
+                }
+
+                a.ham-icon {
+                    background: black;
+
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+
+                    i {
+                        background-color: white;
+                    }
+
+                }
+            }
+        }
 
         a {
             div {
@@ -36,6 +72,10 @@ nav {
             /* margin-right: 0; */
             margin-left: auto;
 
+            @media (max-width: 600px) {
+                display: none;
+            }
+
             a {
                 li {
                     display: inline;
@@ -60,4 +100,9 @@ nav {
     &:focus {
         left: 0;
     }
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
 }

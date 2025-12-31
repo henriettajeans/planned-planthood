@@ -5,6 +5,7 @@
 
     div {
 
+        /* TODO: set hero text to certain margins, see the designs */
         .hero-section__title {
             font-size: max(2.5rem, 2vw);
             /* margin: var(--spacing-base); */
@@ -16,6 +17,7 @@
             }
         }
     }
+
 
     .hero-section__grid {
         display: grid;
