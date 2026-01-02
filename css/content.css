@@ -6,6 +6,7 @@ main>div:nth-child(2) {
     }
 }
 
+/* Not my best solution for a responsive website. */
 .content-section {
     .content-section__grid {
         display: grid;

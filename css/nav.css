@@ -11,43 +11,50 @@ nav {
         position: relative;
         height: 3rem;
 
-        /* .ham-icon {
+        .ham-icon {
             display: none;
-        } */
+        }
 
-        ul {
-            @media (max-width:600px) {
+        @media (width < 600px) {
+            ul {
+
                 overflow: hidden;
-                background-color: blue;
+                background-color: var(--clr-accent);
                 position: absolute;
-                top: 0;
+                top: 3rem;
+                /* right: 0; */
+                width: 100%;
+
+
+            }
+
+
+            a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+            }
+
+            .ham-icon {
+                /* background: black; */
+                color: var(--clr-accent);
+
+                display: block;
+                position: absolute;
                 right: 0;
+                top: 0;
 
-                a {
-                    color: white;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                    font-size: 17px;
-                    display: block;
+
+                i {
+                    background-color: white;
                 }
 
-                a.ham-icon {
-                    background: black;
-
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-
-                    i {
-                        background-color: white;
-                    }
-
-                }
             }
         }
 
-        a {
+        .nav-home {
             div {
                 display: flex;
                 justify-content: flex-start;
@@ -73,6 +80,7 @@ nav {
         ul {
             /* margin-right: 0; */
             margin-left: auto;
+            display: block;
 
             @media (max-width: 600px) {
                 display: none;
