@@ -66,7 +66,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     aspect-ratio: 1;
-    width: min(10rem, 26vw);
+    width: min(6rem, 16vw);
 }
 
 .bg {
@@ -74,5 +74,5 @@
     position: relative;
     border-radius: 100%;
     aspect-ratio: 1;
-    width: min(18rem, 50vw);
+    width: min(14rem, 40vw);
 }
