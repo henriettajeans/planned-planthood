@@ -4,14 +4,22 @@ body>footer {
     padding: var(--flow-space-lg) 0;
 
     .footer-wrapper {
-
         display: grid;
         grid-template-columns: 80% 1fr;
         grid-template-rows: auto;
 
+
         div {
             grid-column: 1/2;
             grid-row: span 2;
+
+            article {
+                padding-bottom: 1.2rem;
+
+                h3 {
+                    padding-bottom: 1.2rem;
+                }
+            }
 
             article>div {
                 display: flex;
@@ -22,7 +30,6 @@ body>footer {
 
         a {
             color: var(--clr-primary-light-1);
-
         }
 
         ul {
@@ -36,7 +43,7 @@ body>footer {
 
             a {
                 li {
-                    padding: 0.6rem;
+                    margin: 1.4rem 0;
                 }
             }
         }

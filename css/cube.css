@@ -1,3 +1,4 @@
+/* Css elements for category links */
 .category {
     border-radius: 3vw;
     padding: 0.2rem 0.4rem;
@@ -52,7 +53,7 @@
 
 .avatar {
     border-radius: 100%;
-    width: min(5rem, 6rem);
+    width: min(4rem, 5rem);
 }
 
 .author {
@@ -60,19 +61,21 @@
     font-weight: 650;
 }
 
+
 .icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     aspect-ratio: 1;
-    width: min(10rem, 26vw);
+    width: min(6rem, 16vw);
 }
 
+/* Parent element to .icon */
 .bg {
     background-color: var(--clr-green-400);
     position: relative;
     border-radius: 100%;
     aspect-ratio: 1;
-    width: min(18rem, 50vw);
+    width: min(14rem, 40vw);
 }
