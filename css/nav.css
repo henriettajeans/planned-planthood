@@ -11,49 +11,6 @@ nav {
         position: relative;
         height: 3rem;
 
-        .ham-icon {
-            display: none;
-        }
-
-        @media (width < 600px) {
-            ul {
-
-                overflow: hidden;
-                background-color: var(--clr-accent);
-                position: absolute;
-                top: 3rem;
-                /* right: 0; */
-                width: 100%;
-
-
-            }
-
-
-            a {
-                color: white;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-                display: block;
-            }
-
-            .ham-icon {
-                /* background: black; */
-                color: var(--clr-accent);
-
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 0;
-
-
-                i {
-                    background-color: white;
-                }
-
-            }
-        }
-
         .nav-home {
             div {
                 display: flex;
@@ -63,8 +20,6 @@ nav {
                 color: var(--clr-green-400);
                 gap: 1rem;
 
-
-
                 .logo {
                     width: 20%;
                 }
@@ -72,19 +27,13 @@ nav {
                 p {
                     font-weight: 600;
                     text-transform: uppercase;
-
                 }
             }
         }
 
         ul {
-            /* margin-right: 0; */
             margin-left: auto;
-            display: block;
-
-            @media (max-width: 600px) {
-                display: none;
-            }
+            /* display: block; */
 
             a {
                 li {
@@ -94,6 +43,45 @@ nav {
             }
 
         }
+
+        .ham-icon {
+            display: none;
+        }
+
+        @media (width < 600px) {
+            ul {
+                overflow: hidden;
+                background-color: var(--clr-accent);
+                position: absolute;
+                top: 3rem;
+                width: 100%;
+                display: none;
+            }
+
+            a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .ham-icon {
+                /* background: black; */
+                color: var(--clr-accent);
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                i {
+                    background-color: white;
+                }
+            }
+        }
+
+
+
+
     }
 }
 
@@ -111,8 +99,3 @@ nav {
         left: 0;
     }
 }
-
-/* .active {
-    background-color: #04AA6D;
-    color: white; */
-/* } */
