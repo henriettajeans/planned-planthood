@@ -1,5 +1,5 @@
 main>div:nth-child(2) {
-    padding: var(--flow-space-lg) 0;
+    padding: var(--flow-space) 0;
 
     @media (max-width: 1050px) {
         padding: var(--flow-space) 0;
@@ -7,6 +7,13 @@ main>div:nth-child(2) {
 }
 
 .content-section {
+    .grid-section__title {
+        text-align: center;
+        font-size: var(--fs-600);
+        padding: 1rem;
+        font-weight: var(--fw-bold);
+    }
+
     .content-section__grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(22ch, 1fr));
@@ -26,8 +33,6 @@ main>div:nth-child(2) {
             grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
         }
 
-
-
         .content-section__grid__card {
             display: grid;
             grid-template-areas: "image" "head";
@@ -35,7 +40,6 @@ main>div:nth-child(2) {
             align-items: start;
             background-color: var(--clr-primary-light-1);
             box-shadow: var(--border-shadow);
-
 
             header {
                 display: grid;
@@ -64,7 +68,7 @@ main>div:nth-child(2) {
                 /* Displays the watermark on top of the card images.
                 Top, left and translate is to position the svg to the center of the image (parent),
                 which has position:relative. */
-                
+
                 .watermark {
                     position: absolute;
                     top: 50%;

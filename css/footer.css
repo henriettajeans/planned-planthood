@@ -4,7 +4,6 @@ body>footer {
     padding: var(--flow-space-lg) 0;
 
     .footer-wrapper {
-
         display: grid;
         grid-template-columns: 80% 1fr;
         grid-template-rows: auto;
@@ -15,7 +14,11 @@ body>footer {
             grid-row: span 2;
 
             article {
-                padding-bottom: 1.6rem;
+                padding-bottom: 1.2rem;
+
+                h3 {
+                    padding-bottom: 1.2rem;
+                }
             }
 
             article>div {
@@ -40,7 +43,7 @@ body>footer {
 
             a {
                 li {
-                    margin: 1.2rem 0;
+                    margin: 1.4rem 0;
                 }
             }
         }

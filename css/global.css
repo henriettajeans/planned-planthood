@@ -13,12 +13,6 @@ h1 {
     font-weight: var(--fw-bold);
 }
 
-
-/* h1,
-h2 {
-    font-size: var(--fs-700);
-} */
-
 h3 {
     font-size: var(--fs-600);
     font-weight: var(--fw-semi-bold);
@@ -45,11 +39,6 @@ body {
     background-color: var(--clr-accent-light-1);
     color: var(--clr-primary-dark);
 }
-
-/* section {
-    margin: var(--flow-space) 0;
-} */
-
 
 /*** Composition ***/
 .flow>*+* {
